@@ -1,0 +1,27 @@
+﻿@model String
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Name</title>
+</head>
+<body>
+    <div> 
+        <div>
+            <fieldset>
+                <legend><b>NAME</b></legend>
+                <form method="post">
+                    <input name="name" type="text" value="@Model" />
+                    <hr />
+                    <input type="submit" value="Submit">
+                </form>
+            </fieldset>
+        </div>
+        @Model
+
+
+    </div>
+</body>
+</html>

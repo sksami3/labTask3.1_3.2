@@ -1,0 +1,21 @@
+﻿@{
+    string dob = "";
+    if (ViewBag.Date != null)
+    {
+        dob = ViewBag.Date.ToShortDateString();
+    }
+}
+
+<div>
+    <fieldset>
+        <legend><b>DATE OF BIRTH</b></legend>
+        <form method="post">
+            <input name="date" type="text" value="@dob" />
+            <i>(dd/mm/yyyy)</i>
+            <hr />
+            <input type="submit" value="Submit">
+        </form>
+    </fieldset>
+</div>
+@dob
+

@@ -1,0 +1,38 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>BG</title>
+</head>
+<body>
+    <div> 
+        <div>
+            <fieldset>
+                <legend><b>BLOOD GROUP</b></legend>
+                <form method="post">
+                    <select name="bloodGroup">
+                        <option>@null</option>
+                        <option>A+</option>
+                        <option>B+</option>
+                        <option>O+</option>
+                        <option>AB+</option>
+                        <option>A-</option>
+                        <option>B-</option>
+                        <option>O-</option>
+                        <option>AB-</option>
+                    </select>
+                    <hr />
+                    <input type="submit" value="Submit">
+                </form>
+            </fieldset>
+        </div>
+        @ViewBag.BloodGroup
+    </div>
+</body>
+</html>

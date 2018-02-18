@@ -1,0 +1,40 @@
+﻿
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Email</title>
+</head>
+<body>
+    <div> 
+        <div>
+            <fieldset>
+                <legend><b>EMAIL</b></legend>
+                <form method="post">
+                    <input name="email" type="text" value="@ViewBag.Email" />
+                    <abbr title="hint: sample@example.com"><b>i</b></abbr>
+                    <hr />
+                    <input type="submit" value="Submit">
+                </form>
+            </fieldset>
+        </div>
+        @*@{
+            if (ViewBag.Email == null)
+            {
+                ViewBag.Email = "Can not be empty";
+                @ViewBag.Email
+            }
+
+            else
+            {
+               <h1> @ViewBag.Email</h1>
+            }
+        }*@
+        
+        @ViewBag.Email
+
+    </div>
+</body>
+</html>
